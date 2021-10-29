@@ -1,14 +1,14 @@
+/*==============Page================*/
 * {
   margin: 0;
   padding: 0;
 }
-
+/*==============Cabeçalho================*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: rgb(0, 0, 0);
-  font: 400 1rem 'Roboto', sans-serif;
 }
 
 header {
@@ -17,6 +17,7 @@ header {
   background-color: rgb(0, 0, 0);
   width: 100%;
   transition: 0.6s;
+  padding: 0px 0px;
   border-bottom: 1px solid rgb(235, 11, 11);
 }
 
@@ -32,8 +33,30 @@ header a {
   text-decoration: none;
   display: block;
   padding: 10px 10px;
+  font: 400 1rem 'Roboto', sans-serif;
+  transition: color 0.2s;
+  position: relative;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+}
+header a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.2s;
+}
+header a:hover::after {
+  width: 100%;
 }
 
+header a:hover {
+  color: red;
+}
+
+/*==============Crousel================*/
 .carousel {
   margin-left: 15%;
   margin-right: 15%;
@@ -165,7 +188,7 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 input:checked + .slide-container .nav label {
   display: block;
 }
-
+/*==============Escritas Filmes/series/Estudos================*/
 .container1 {
   color: #fff;
   font-size: 30px;
@@ -181,7 +204,7 @@ input:checked + .slide-container .nav label {
     #fa010100 75%
   );
 }
-
+/*==============Imgens Filmes,Series,Estudos================*/
 .item {
   flex: none;
   width: 100%;
