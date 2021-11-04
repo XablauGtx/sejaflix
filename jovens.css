@@ -1,9 +1,7 @@
 /*==============Page================*/
 * {
   margin: 0;
-padding: 0;
-  
-  
+  padding: 0;
 }
 /*==============Cabeçalho================*/
 body {
@@ -193,7 +191,7 @@ input:checked + .slide-container .nav label {
 /*==============Escritas Filmes/series/Estudos================*/
 .container1 {
   color: #fff;
-  font: 400 1rem 'Roboto', sans-serif;;
+  font: 400 1rem 'Roboto', sans-serif;
   font-size: 30px;
   width: 100%;
   text-align: center;
@@ -204,7 +202,8 @@ input:checked + .slide-container .nav label {
     to right,
     #fa010100 25%,
     #fa0101 50%,
-    #fa010100 75%)
+    #fa010100 75%
+  );
 }
 /*==============Imgens Filmes,Series,Estudos================*/
 .item {
@@ -213,7 +212,6 @@ input:checked + .slide-container .nav label {
   height: 800px;
   scroll-snap-align: start;
   pointer-events: none;
-  
 }
 
 .item img {
@@ -221,7 +219,6 @@ input:checked + .slide-container .nav label {
   width: 100%;
   height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  
 }
 
 .last1 img {
@@ -240,27 +237,32 @@ ul {
   overflow-y: hidden;
   overflow-x: scroll;
   margin: 20px 0;
-
 }
 .buttonLeft {
+  display: flex;
   position: absolute;
   font-size: 90px;
   color: aliceblue;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  opacity: 0.5;
+  text-align: left;
+  left: 0;
+  text-align: center;
   border: none;
-  background: linear-gradient(
-    90deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  opacity: 0.2;
+  line-height: 375px;
+  border-radius: 50%;
+  transition: 0.6s ease;
+  
 }
 .buttonRight {
   position: absolute;
   font-size: 90px;
   color: aliceblue;
-  border: none;
-  background: linear-gradient(
-    90deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  opacity: 0.2;
+  background: linear-gradient(90deg, black 100%, rgba(0, 0, 0, 0) 0%);
+  opacity: 0.5;
   text-align: right;
   right: 0;
   text-align: center;
-  padding: 50px;
+  border: none;
+  line-height: 375px;
 }
