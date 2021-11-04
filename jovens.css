@@ -212,6 +212,7 @@ input:checked + .slide-container .nav label {
   height: 800px;
   scroll-snap-align: start;
   pointer-events: none;
+  
 }
 
 .item img {
@@ -219,6 +220,7 @@ input:checked + .slide-container .nav label {
   width: 100%;
   height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow: hidden;
 }
 
 .last1 img {
@@ -233,12 +235,63 @@ ul {
   padding: 0;
   object-fit: contain;
   display: flex;
-  gap: 3rem;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  gap: 5rem;
   margin: 20px 0;
+  position: relative;
+  padding-left: 20px;
+  
+  
 }
-.buttonLeft {
+.arrowR1 {
+  font-size: 120px;
+  position: absolute;
+  color: rgb(250, 0, 0);
+  top: 950px;
+  right: 0;
+  opacity: .5;
+  cursor: pointer;
+
+}
+.arrowL1{
+  font-size: 120px;
+  position: absolute;
+  color: rgb(250, 0, 0);
+  top: 950px;
+  left: 0;
+  opacity: .5;
+  cursor: pointer;
+
+}
+
+.arrowR2{
+  font-size: 120px;
+  position: absolute;
+  color: #fff;
+  top: 1480px;
+  right: 0;
+  opacity: .5;
+  cursor: pointer;
+}
+.arrowL2{
+  font-size: 120px;
+  position: absolute;
+  color: #fff;
+  top: 1480px;
+  left: 0;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.arrow3{
+  font-size: 120px;
+  position: absolute;
+  color: #fff;
+  top: 2000px;
+  right: 0;
+  opacity: .5;
+  cursor: pointer;
+}
+/*.buttonLeft {
   display: flex;
   position: absolute;
   font-size: 90px;
@@ -252,7 +305,6 @@ ul {
   line-height: 375px;
   border-radius: 50%;
   transition: 0.6s ease;
-  
 }
 .buttonRight {
   position: absolute;
@@ -265,4 +317,7 @@ ul {
   text-align: center;
   border: none;
   line-height: 375px;
-}
+}*/
+
+
+
