@@ -5,7 +5,8 @@
 body {
   background-color: rgb(3, 3, 3);
 }
-
+                                    /*  Logo */
+                                    
 .logo {
   width: 100vw;
   height: 4rem;
@@ -22,6 +23,9 @@ body {
 .logo img {
   width: 100px;
 }
+
+                                   /*  Escritas */
+
 h1 {
   align-items: center;
   justify-content: center;
@@ -33,29 +37,6 @@ h1 {
   letter-spacing: 0.2rem;
   font-size: 800;
   font: 400 3rem 'Rajdhani', sans-serif;
-}
-ul {
-  list-style: none;
-  padding: 1.5rem;
-  display: flex;
-  gap: 10rem;
-  justify-content: center;
-  z-index: 1;
-}
-.icon1 img {
-  object-fit: cover;
-  width: 150px;
-  height: 150px;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  margin-bottom: 1rem;
-}
-
-.icon2 img {
-  object-fit: cover;
-  width: 150px;
-  height: 150px;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  margin-bottom: 1rem;
 }
 h3 {
   color: rgb(255, 255, 255);
@@ -90,3 +71,30 @@ a:hover {
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 200px #03e9f4;
 }
+
+                                  /*  Imagens */
+
+ul {
+  list-style: none;
+  padding: 1.5rem;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  z-index: 1;
+}
+.icon1 img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  margin-bottom: 1rem;
+}
+
+.icon2 img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  margin-bottom: 1rem;
+}
+
